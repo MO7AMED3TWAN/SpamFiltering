@@ -17,7 +17,6 @@ with st.sidebar:
                 joblib.dump(pipeline, 'spam_model.joblib')
                 st.success("Model trained!")
 
-tab1, tab2 = st.tabs(["Single Email", "Batch Process"])
 
 with tab1:
     email = st.text_area("Paste email text:", height=200)
